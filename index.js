@@ -1,6 +1,6 @@
 const express = require("express" );
 const bodyParser = require("body-parser");
-
+const port =  process.env.PORT || 4000;
 var app = express();
 app.set("view engine","ejs");
 app.use(express.static("public"));
